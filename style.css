@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+.section-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 40px;
+  background-color: #f0eaea;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.feedback-form button {
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  padding: 8px;
+  font: inherit;
+}
+
+textarea {
+  resize: none;
+}

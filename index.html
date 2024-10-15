@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="section-form">
+      <form
+        class="feedback-form"
+        method="POST"
+        autocomplete="off"
+        id="contact-form"
+      >
+        <label>
+          Full Name
+          <input type="text" id="fullname" name="Name" autofocus required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="email_id" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="8" required></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <script src="./index.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("esdUna1kvVIZHJdVN");
+      })();
+    </script>
+  </body>
+</html>
