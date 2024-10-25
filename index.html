@@ -9,12 +9,21 @@
   </head>
   <body>
     <section class="section-form">
+      <div>
+        <h2 class="title-card">devise</h2>
+        <button class="pay-button">Pay</button>
+      </div>
+
       <form
-        class="feedback-form"
+        class="feedback-form hidden"
         method="POST"
         autocomplete="off"
         id="contact-form"
       >
+        <label>
+          Your current
+          <input type="text" name="current" id="current" />
+        </label>
         <label>
           Full Name
           <input type="text" id="fullname" name="Name" autofocus required />

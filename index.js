@@ -1,3 +1,8 @@
+const payButton = document.querySelector(".pay-button");
+const form = document.querySelector(".feedback-form");
+const currentCardTitle = document.querySelector(".title-card").textContent;
+const currentInputField = form.querySelector('input[type="text"]');
+
 document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("contact-form")
@@ -5,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault(); // Запобігає перезавантаженню сторінки
 
       let params = {
+        current: document.getElementById("current").value,
         from_name: document.getElementById("fullname").value,
         email_id: document.getElementById("email_id").value,
         message: document.getElementById("message").value,
@@ -19,4 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Failed to send email: " + error);
         });
     });
+});
+
+payButton.addEventListener("click", () => {
+  form.classList.toggle("hidden");
+  if (!form.classList.contains("hidden")) {
+    currentInputField.value = currentCardTitle;
+  }
 });

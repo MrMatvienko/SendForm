@@ -4,6 +4,7 @@ body {
 }
 .section-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 100px 50px;
@@ -15,7 +16,7 @@ body {
   max-width: 600px;
   padding: 40px;
   background-color: #f0eaea;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0);
   border-radius: 4px;
 }
 
@@ -38,5 +39,8 @@ textarea {
 }
 
 textarea {
-  resize: none;
+  resize: vertical;
+}
+.hidden {
+  display: none;
 }
