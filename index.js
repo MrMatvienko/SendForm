@@ -20,9 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .send("service_zo5qi0m", "template_wvlzqzp", params)
         .then(function (res) {
           alert("Success! Status: " + res.status);
+          form.classList.add("hidden");
+          form.reset();
         })
         .catch(function (error) {
           alert("Failed to send email: " + error);
+          form.reset();
         });
     });
 });

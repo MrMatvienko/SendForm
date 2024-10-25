@@ -44,3 +44,6 @@ textarea {
 .hidden {
   display: none;
 }
+.hidden-lable {
+  opacity: 0;
+}
